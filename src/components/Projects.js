@@ -9,12 +9,11 @@ export default function Projects() {
         <div className="flex flex-col w-full mb-20">
           <CodeIcon className="mx-auto inline-block w-10 mb-4" />
           <h1 className="sm:text-4xl text-3xl font-medium title-font mb-4 text-white">
-            Apps I've Built
+            Project Portfolio
           </h1>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo
-            facilis repellat ab cupiditate alias vero aliquid obcaecati quisquam
-            fuga dolore.
+            Here is a summary of what I've been up to in the last 4 years, 
+            for more information feel free to click on a project!
           </p>
         </div>
         <div className="flex flex-wrap -m-4">
@@ -27,6 +26,7 @@ export default function Projects() {
                 <img
                   alt="gallery"
                   className="absolute inset-0 w-full h-full object-cover object-center"
+                  style=" object-fit: contain;"
                   src={project.image}
                 />
                 <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
