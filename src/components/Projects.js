@@ -42,8 +42,13 @@ export default function Projects() {
           ))}
         </div>
       </div>
-      <div style="height:100px">
-        
+      <div>
+        .
+        .
+        .
+        .
+        .
+        .
       </div>
     </section>
   );
