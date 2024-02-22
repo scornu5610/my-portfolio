@@ -42,6 +42,9 @@ export default function Projects() {
           ))}
         </div>
       </div>
+      <div>
+        Skills below
+      </div>
     </section>
   );
 }
