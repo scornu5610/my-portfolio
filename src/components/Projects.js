@@ -43,12 +43,12 @@ export default function Projects() {
         </div>
       </div>
       <div>
-        .
-        .
-        .
-        .
-        .
-        .
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
       </div>
     </section>
   );
