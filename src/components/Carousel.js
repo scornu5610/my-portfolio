@@ -39,7 +39,7 @@ export default function Carousel(){
       setActiveIndex(newIndex);
     };
   return (
-    <div className="carousel">
+    <div className="carousel px-5 py-10 mx-auto text-center lg:px-40">
       <div
         className="inner"
         style={{ transform: `translate(-${activeIndex * 100}%)`}}
