@@ -8,7 +8,7 @@ export default function Carousel(){
       title: "Baseball",
       description:
         "Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher.",
-        icon: require("./coding.svg"),
+        icon: require("./Media/coding.svg"),
     },
   ];
   const updateIndex = (newIndex) => {
@@ -33,6 +33,8 @@ export default function Carousel(){
           </div>)    //CarouselItem item={item} width={"100%"} />;
         })}
       </div>
+
+
       <div className="carousel-buttons">
         <button
           className="button-arrow"
