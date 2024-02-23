@@ -42,6 +42,11 @@ export default function Carousel(){
         <div className="carousel-item" style={{ width: "100%" }}>
           <div></div>
           <img className="carousel-img" src= "./Media/example1.svg"/>
+          <img
+            className="object-cover object-center rounded"
+            alt="hero"
+            src="./mountains.png"
+          />
           <div className="carousel-item-text">"Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher."</div>
         </div>
 
