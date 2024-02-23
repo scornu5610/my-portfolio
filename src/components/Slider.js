@@ -1,7 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 
-/*
+
 export default function SimpleSlider() {
     var settings = {
       dots: true,
@@ -10,7 +10,10 @@ export default function SimpleSlider() {
       slidesToShow: 1,
       slidesToScroll: 1,
     };
+    
     return (
+      <div></div>
+      /*
       <Slider {...settings}>
         <div>
           <h3>1</h3>
@@ -31,6 +34,8 @@ export default function SimpleSlider() {
           <h3>6</h3>
         </div>
       </Slider>
+      */
     );
+    
   }
-  */
+  
