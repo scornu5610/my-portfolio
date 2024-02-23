@@ -2,8 +2,7 @@ import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
 import { projects } from "../data";
 
-import Carousel from 'react-bootstrap/Carousel';
-import ExampleCarouselImage from 'components/ExampleCarouselImage';
+import Slider from "react-slick";
 
 export default function Projects() {
   return (
