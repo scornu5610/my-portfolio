@@ -41,13 +41,8 @@ export default function Carousel(){
       >
         <div className="carousel-item" style={{ width: "100%" }}>
           <div></div>
-          <img
-            className="object-cover object-center rounded"
-            alt="hero"
-            src="./mountains.png"
-          />
-          <div></div>
-          <div className="leading-relaxed">"Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher."</div>
+          
+          <div className="carousel-item-text" style="backgroundImage: './mountains.png'">"Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher."</div>
         </div>
 
         {items.map((item) => {
