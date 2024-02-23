@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { CarouselItem } from "./CarouselItem";
 
 
 export default function Carousel(){
@@ -37,19 +36,23 @@ export default function Carousel(){
     <div className="carousel">
       <div
         className="inner"
-        style={{ transform: `translate(-${activeIndex * 100}%)`
-     }}
-      >
+        style={{ transform: `translate(-${activeIndex * 100}%)`}}>
         {items.map((item) => {
-          return <div className="carousel-item" style={{ width: "100%" }}>
+          return (<div className="carousel-item">
           <div></div>
-          <img className="carousel-img" src={item.icon.default} />
           <div className="carousel-item-text">{item.description}</div>
-          </div>    //CarouselItem item={item} width={"100%"} />;
+          </div>)    //CarouselItem item={item} width={"100%"} />;
         })}
       </div>
+      
+      
+      
+    </div>
+  );
+};
 
-      <div className="carousel-buttons">
+/*
+<div className="carousel-buttons">
         <button
           className="button-arrow"
           onClick={() => {
@@ -78,6 +81,4 @@ export default function Carousel(){
         >
         </button>
       </div>
-    </div>
-  );
-};
+      */
