@@ -29,7 +29,8 @@ export default function Carousel(){
         <div className="carousel mx-auto text-center">
           
           <div
-             //carousel px-5 py-10 mx-auto text-center lg:px-40 
+             className="inner"
+              style={{ transform: `translate(-${activeIndex * 100}%)`}}//carousel px-5 py-10 mx-auto text-center lg:px-40 
           >
           
             {projects.map((project) => (
