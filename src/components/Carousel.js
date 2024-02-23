@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import { projects } from "../data";
 
 export default function Carousel(){
   const [activeIndex, setActiveIndex] = useState(0);
@@ -39,19 +39,29 @@ export default function Carousel(){
         style={{ transform: `translate(-${activeIndex * 100}%)`
      }}
       >
-        <div className="carousel-item" style={{ width: "100%" }}>
-          <div></div>
-          
-          <div className="carousel-item-text" style="backgroundImage: './mountains.png'">"Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher."</div>
-        </div>
-
-        {items.map((item) => {
-          return (<div className="carousel-item" style={{ width: "100%" }}>
-          <div></div>
-          <img className="carousel-img" src={item.icon.default} />
-          <div className="carousel-item-text">{item.description}</div>
-        </div>);
-        })}
+        {projects.map((project) => (
+            <a
+              href={project.link}
+              key={project.image}
+              className="sm:w-1/2 w-100 p-4">
+              <div className="flex relative">
+                <img
+                  alt="gallery"
+                  className="absolute inset-0" // w-full h-full object-cover object-center
+                  src={project.image}
+                />
+                <div className="px-8 py-10 relative z-10 w-full border-4 border-gray-800 bg-gray-900 opacity-0 hover:opacity-100">
+                  <h2 className="tracking-widest text-sm title-font font-medium text-green-400 mb-1">
+                    {project.subtitle}
+                  </h2>
+                  <h1 className="title-font text-lg font-medium text-white mb-3">
+                    {project.title}
+                  </h1>
+                  <p className="leading-relaxed">{project.description}</p>
+                </div>
+              </div>
+            </a>
+          ))}
       </div>
 
 
@@ -99,3 +109,14 @@ export default function Carousel(){
     </div>
   );
 };
+
+/**
+ * {items.map((item) => {
+          return (
+          <div className="carousel-item" style={{ width: "100%" }}>
+          <div></div>
+          <img className="carousel-img" src={item.icon.default} />
+          <div className="carousel-item-text">{item.description}</div>
+        </div>);
+        })}
+ */
