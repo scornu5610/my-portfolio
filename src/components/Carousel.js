@@ -6,8 +6,8 @@ export default function Carousel(){
   const updateIndex = (newIndex) => {
     if (newIndex < 0) {
       newIndex = 0;
-    } else if (newIndex >= items.length) {
-      newIndex = items.length - 1;
+    } else if (newIndex >= projects.length) {
+      newIndex = projects.length - 1;
     }
 
     setActiveIndex(newIndex);
@@ -57,7 +57,7 @@ export default function Carousel(){
           <span class="material-symbols-outlined">arrow_back_ios</span>{" "}
         </button>
         <div className="indicators">
-          {items.map((item, index) => {
+          {projects.map((project, index) => {
             return (
               <button
                 className="indicator-buttons"
@@ -91,14 +91,3 @@ export default function Carousel(){
     </div>
   );
 };
-
-/**
- * {items.map((item) => {
-          return (
-          <div className="carousel-item" style={{ width: "100%" }}>
-          <div></div>
-          <img className="carousel-img" src={item.icon.default} />
-          <div className="carousel-item-text">{item.description}</div>
-        </div>);
-        })}
- */
