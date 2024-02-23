@@ -42,13 +42,7 @@ export default function Carousel(){
             updateIndex(activeIndex - 1);
           }}
         >
-        </button>
-        <button
-          className="button-arrow"
-          onClick={() => {
-            updateIndex(activeIndex - 1);
-          }}
-        >
+          <span class="material-symbols-outlined">arrow_back_ios</span>{" "}
         </button>
         <div className="indicators">
           {items.map((item, index) => {
@@ -59,6 +53,15 @@ export default function Carousel(){
                   updateIndex(index);
                 }}
               >
+                <span
+                  className={`material-symbols-outlined ${
+                    index === activeIndex
+                      ? "indicator-symbol-active"
+                      : "indicator-symbol"
+                  }`}
+                >
+                  radio_button_checked
+                </span>
               </button>
             );
           })}
@@ -69,6 +72,7 @@ export default function Carousel(){
             updateIndex(activeIndex + 1);
           }}
         >
+          <span class="material-symbols-outlined">arrow_forward_ios</span>
         </button>
       </div>
       
