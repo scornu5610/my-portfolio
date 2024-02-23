@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { CarouselItem } from "./CarouselItem";
 
 
 export default function Carousel(){
@@ -40,11 +41,11 @@ export default function Carousel(){
      }}
       >
         {items.map((item) => {
-          return <div className="carousel-item" style={{ width: width }}>
+          return <div className="carousel-item" style={{ width: "100%" }}>
           <div></div>
           <img className="carousel-img" src={item.icon.default} />
           <div className="carousel-item-text">{item.description}</div>
-          </div>;
+          </div>    //CarouselItem item={item} width={"100%"} />;
         })}
       </div>
 
