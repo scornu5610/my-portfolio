@@ -97,7 +97,7 @@ export default function Carousel(){
                       : "indicator-symbol"
                   }`}
                 >
-                  radio_button_checked
+                  ◉
                 </span>
               </button>
             );
@@ -109,7 +109,7 @@ export default function Carousel(){
             updateIndex(activeIndex + 1);
           }}
         >
-          <span class="material-symbols-outlined">arrow_forward_ios</span>
+          <span class="material-symbols-outlined">▶</span>
         </button>
       </div>
       
