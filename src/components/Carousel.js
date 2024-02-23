@@ -5,21 +5,18 @@ export default function Carousel(){
   const [activeIndex, setActiveIndex] = useState(0);
   const items = [{},{},{},{},];
     function updateIndex(newIndex){ //just used to keep track of index I think
-      
       if (newIndex < 0) {
         newIndex = 0;
       } else if (newIndex >= items.length) {
         newIndex = items.length - 1;
       }
-      
-
       setActiveIndex(newIndex);
     };
   return (
-    <div className="carousel px-5 py-10 mx-auto text-center lg:px-40">
+    <div className="carousel mx-auto text-center">
       <div
         className="inner"
-        style={{ transform: `translate(-${activeIndex * 100}%)`}}
+        style={{ transform: `translate(-${activeIndex * 100}%)`}} //carousel px-5 py-10 mx-auto text-center lg:px-40
       >
         {projects.map((project) => (
           <div className="carousel-item" style={{ width: "100%" }}>
