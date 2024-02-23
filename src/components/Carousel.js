@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { projects } from "../data";
+import { CodeIcon } from "@heroicons/react/solid";
 
 export default function Carousel(){
   const [activeIndex, setActiveIndex] = useState(0);
