@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import { CarouselItem } from "./CarouselItem";
 
+export default function(){}
+
+/*
 export default function Carousel(){
   const [activeIndex, setActiveIndex] = useState(0);
   const items = [
@@ -87,3 +90,4 @@ export default function Carousel(){
     </div>
   );
 };
+*/

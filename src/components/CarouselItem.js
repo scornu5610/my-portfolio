@@ -1,5 +1,7 @@
 import React from "react";
 
+export default function(){}
+/*
 export default function CarouselItem({ item, width }){
   return (
     <div className="carousel-item" style={{ width: width }}>
@@ -9,3 +11,4 @@ export default function CarouselItem({ item, width }){
     </div>
   );
 };
+*/
