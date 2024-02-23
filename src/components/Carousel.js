@@ -44,8 +44,15 @@ export default function Carousel(){
           </div>)    //CarouselItem item={item} width={"100%"} />;
         })}
       </div>
-      
-      
+      <div className="carousel-buttons">
+        <button
+          className="button-arrow"
+          onClick={() => {
+            updateIndex(activeIndex - 1);
+          }}
+        >
+        </button>
+      </div>
       
     </div>
   );
