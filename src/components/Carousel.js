@@ -40,6 +40,7 @@ export default function Carousel(){
      }}
       >
         {projects.map((project) => (
+          <div className="carousel-item" style={{ width: "100%" }}>
             <a
               href={project.link}
               key={project.image}
@@ -61,7 +62,8 @@ export default function Carousel(){
                 </div>
               </div>
             </a>
-          ))}
+          </div>
+        ))}
       </div>
 
 
