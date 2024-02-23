@@ -79,7 +79,7 @@ export default function Carousel(){
             updateIndex(activeIndex - 1);
           }}
         >
-          <span class="material-symbols-outlined">arrow_back_ios</span>{" "}
+          <span class="material-symbols-outlined">◁</span>{" "}
         </button>
         <div className="indicators">
           {items.map((item, index) => {
@@ -109,7 +109,7 @@ export default function Carousel(){
             updateIndex(activeIndex + 1);
           }}
         >
-          <span class="material-symbols-outlined">▶</span>
+          <span class="material-symbols-outlined">▷</span>
         </button>
       </div>
       
