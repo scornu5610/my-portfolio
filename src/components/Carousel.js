@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { CarouselItem } from "./CarouselItem";
-export const Carousel = () => {
+
+export default function Carousel(){
   const [activeIndex, setActiveIndex] = useState(0);
   const items = [
     {
