@@ -52,14 +52,6 @@ export default function Carousel(){
           }}
         >
         </button>
-      </div>
-      
-    </div>
-  );
-};
-
-/*
-<div className="carousel-buttons">
         <button
           className="button-arrow"
           onClick={() => {
@@ -88,4 +80,7 @@ export default function Carousel(){
         >
         </button>
       </div>
-      */
+      
+    </div>
+  );
+};
