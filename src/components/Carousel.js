@@ -22,22 +22,27 @@ export default function Carousel(){
         "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
       icon: require("./Media/example3.svg"),
     },
+    {
+      title: "Weights",
+      description:
+        "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
+      icon: require("./Media/example3.svg"),
+    },
   ];
-  const updateIndex = (newIndex) => {
-    if (newIndex < 0) {
-      newIndex = 0;
-    } else if (newIndex >= items.length) {
-      newIndex = items.length - 1;
-    }
+    function updateIndex(newIndex){
+      if (newIndex < 0) {
+        newIndex = 0;
+      } else if (newIndex >= items.length) {
+        newIndex = items.length - 1;
+      }
 
-    setActiveIndex(newIndex);
-  };
+      setActiveIndex(newIndex);
+    };
   return (
     <div className="carousel">
       <div
         className="inner"
-        style={{ transform: `translate(-${activeIndex * 100}%)`
-     }}
+        style={{ transform: `translate(-${activeIndex * 100}%)`}}
       >
         {projects.map((project) => (
           <div className="carousel-item" style={{ width: "100%" }}>
