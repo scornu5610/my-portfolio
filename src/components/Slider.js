@@ -12,7 +12,7 @@ export default function SimpleSlider() {
     };
     
     return (
-      <div></div>
+      <Slider></Slider>
       /*
       <Slider {...settings}>
         <div>
