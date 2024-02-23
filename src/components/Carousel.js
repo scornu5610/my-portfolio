@@ -29,12 +29,15 @@ export default function Carousel(){
       icon: require("./Media/example3.svg"),
     },
   ];
-    function updateIndex(newIndex){
+    function updateIndex(newIndex){ //just used to keep track of index I think
+      /*
       if (newIndex < 0) {
         newIndex = 0;
       } else if (newIndex >= items.length) {
         newIndex = items.length - 1;
       }
+      */
+      newIndex = 4; //numprojects = 4
 
       setActiveIndex(newIndex);
     };
@@ -82,7 +85,7 @@ export default function Carousel(){
           <span class="material-symbols-outlined">◁</span>{" "}
         </button>
         <div className="indicators">
-          {items.map((item, index) => {
+          {projects.map((item, index) => { //changed items to projects
             return (
               <button
                 className="indicator-buttons"
