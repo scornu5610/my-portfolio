@@ -38,7 +38,7 @@ export default function Carousel(){
         className="inner"
         style={{ transform: `translate(-${activeIndex * 100}%)`}}>
         {items.map((item) => {
-          return (<div className="carousel-item">
+          return (<div className="carousel-item" style={{ width: "100%" }}>
           <div></div>
           <div className="carousel-item-text">{item.description}</div>
           </div>)    //CarouselItem item={item} width={"100%"} />;
