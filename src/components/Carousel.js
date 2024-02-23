@@ -40,7 +40,11 @@ export default function Carousel(){
      }}
       >
         {items.map((item) => {
-          return <CarouselItem item={item} width={"100%"} />;
+          return (<div className="carousel-item" style={{ width: "100%" }}>
+          <div></div>
+          <img className="carousel-img" src={item.icon.default} />
+          <div className="carousel-item-text">{item.description}</div>
+        </div>);
         })}
       </div>
 
